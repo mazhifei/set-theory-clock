@@ -2,7 +2,10 @@ package com.paic.arch.interviews;
 
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.junit.Before;
 import org.junit.Test;
+
+import com.paic.arch.interviews.impl.TimeConverterImpl;
 
 import static com.paic.arch.interviews.support.BehaviouralTestEmbedder.aBehaviouralTestRunner;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -15,7 +18,11 @@ public class SetTheoryClockDevice {
 
     private TimeConverter setTheoryClock;
     private String theTime;
-
+	@Before
+	public void setup() {
+    	this.setTheoryClock = new TimeConverterImpl();
+	}
+    
     @Test
     public void setTheoryClockAcceptanceTests() throws Exception {
         aBehaviouralTestRunner()
