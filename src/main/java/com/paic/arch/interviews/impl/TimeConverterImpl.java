@@ -15,7 +15,7 @@ public class TimeConverterImpl implements TimeConverter {
 		}
 		String nums[] = aTime.split(":");
 		int hour = Integer.valueOf(nums[0]);
-		int minute = Integer.valueOf(nums[1]);
+		int minute = Integer.valueOf(nums[1]); 
 		int second = Integer.valueOf(nums[2]);
 		
 		String ret = displayLightStatus(hour, minute, second);
