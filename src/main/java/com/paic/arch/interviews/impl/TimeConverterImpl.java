@@ -70,4 +70,10 @@ public class TimeConverterImpl implements TimeConverter {
 		return buffer.toString();
 	}
 
+	@Override
+	public String convertTime1(String a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
