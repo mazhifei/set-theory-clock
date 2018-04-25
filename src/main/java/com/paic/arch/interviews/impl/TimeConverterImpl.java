@@ -72,6 +72,7 @@ public class TimeConverterImpl implements TimeConverter {
 
 	public String convertTime21(String a) {
 		// TODO Auto-generated method stub
+		String s="123";
 		return null;
 	}
 
