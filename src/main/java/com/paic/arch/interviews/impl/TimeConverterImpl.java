@@ -71,7 +71,7 @@ public class TimeConverterImpl implements TimeConverter {
 	}
 
 	@Override
-	public String convertTime1(String a) {
+	public String convertTime21(String a) {
 		// TODO Auto-generated method stub
 		return null;
 	}
